@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- https://getbootstrap.com/docs/5.0/migration/ -->
+
+    <title>Alertas e barras de progresso</title>
+  </head>
+
+  <body style="margin-bottom: 200px; padding: 16px">
+    <h1>Alertas</h1>
+    <div class="alert alert-success">
+      <strong>Primary</strong> você tem uma postagem pendente!
+    </div>
+
+    <h2>Alerta com botão fechar</h2>
+    <div class="alert alert-warning alert-dismissible">
+      <strong>Fechar</strong> Alerta com botão fechar
+      <button class="btn-close" type="button" data-bs-dismiss="alert"></button>
+    </div>
+    <br /><br />
+
+    <h2>Alerta com mais conteúdos</h2>
+    <div class="alert alert-dark">
+      <h4>Título</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus
+        in purus malesuada vulputate. Sed lacinia quam massa, eu consectetur
+        tortor faucibus sed.
+      </p>
+      <hr />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus
+        in purus malesuada vulputate. Sed lacinia quam massa, eu consectetur
+        tortor faucibus sed.
+      </p>
+    </div>
+    <br /><br />
+
+    <h2>Barra de progresso</h2>
+    <div class="progress">
+      <div class="progress-bar w-25 bg-success"></div>
+    </div>
+    <br />
+
+    <h2>Altura</h2>
+    <div class="progress" style="height: 50px">
+      <div class="progress-bar w-25"></div>
+    </div>
+    <br />
+
+    <h2>Listrado</h2>
+    <div class="progress">
+      <div class="progress-bar w-25 progress-bar-striped"></div>
+    </div>
+    <br />
+
+    <h2>Animado</h2>
+    <div class="progress">
+      <div
+        class="progress-bar w-25 progress-bar-striped progress-bar-animated"
+      ></div>
+    </div>
+    <br />
+
+    <h2>Múltiplas barras</h2>
+    <div class="progress">
+      <div class="progress-bar w-25 bg-success">q</div>
+      <div class="progress-bar w-50 bg-warning">q</div>
+      <div class="progress-bar w-75 bg-danger">é isso</div>
+    </div>
+    <br />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

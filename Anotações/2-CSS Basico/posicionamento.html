@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento estatico, relativo, absoluto e fixo</title>
+
+    <style>
+
+        /*
+        estatica é padrao
+        relativa é relativa a posição padrão
+        absoluto é "ignorado" pelos outros elementos da pagina
+        fixo não acompanha a rolagem da pagina
+         */
+
+        body{
+            background: #007fc7;
+        }
+
+        #container {
+            background: #FFF;
+            width: 800px;
+            margin: 10px auto;
+            padding: 10px;
+            position: relative;
+        }
+
+        .relative {
+            border: 1px solid red;
+            position: relative;
+            /*top, right, bottom, left*/
+            top: -10px;
+            left: 80px;
+        }
+
+        .absolute {
+            border: 1px solid red;
+            position: absolute;
+            top: 0px;
+            right: 80px;
+        }
+
+        h1 {
+            position: static;
+        }
+
+        p {
+            width: 400px;
+            position: static;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="container">
+        
+        <h1>titulo</h1>
+
+        <p>paragrafo</p>
+
+        <p class="absolute">paragrafo</p>
+
+        <p>paragrafo</p>
+
+        <p class="absolute">paragrafo</p>
+
+    </div>
+    
+</body>
+</html>

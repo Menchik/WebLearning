@@ -1,0 +1,18 @@
+/**/
+
+.conteudo {
+    border: 1px solid red;
+    /*padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 12px;
+    padding-left: 20px;*/
+
+    /*padding: 15px (top) 15px (right) 15px (bottom) 15px (left);*/
+
+    padding: 20px;
+
+    margin-top: 20px;
+    margin-left: 30px;
+
+    width: 150px;
+}

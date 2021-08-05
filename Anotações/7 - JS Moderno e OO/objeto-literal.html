@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      class Produto {
+        constructor(descricao, preco) {
+          this.descricao = descricao;
+          this.preco = preco;
+        }
+
+        verDescricao() {
+          console.log(`${this.descricao} por apenas ${this.preco}`);
+        }
+      }
+
+      let produto = new Produto("Notebook", 2200);
+
+      //   produto.verDescricao();
+
+      let produtoLiteral = {
+        descricao: "Geladeira",
+        preco: 1800,
+        verDescricao: function () {
+          console.log(`${this.descricao} por apenas ${this.preco}`);
+        },
+      };
+
+      //   produtoLiteral.verDescricao();
+
+      ////////////////////////Melhorias de notação////////////////////////
+
+      let nome = "Jorge";
+      let idade = 29;
+      let sexo = "Masculino";
+      let profissao = "Programador";
+
+      let objeto = {
+        nome: nome,
+        idade: idade,
+        sexo: sexo,
+        profissao: profissao,
+        exibirResumo: function () {
+          console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`);
+        },
+      };
+
+      //   console.log(objeto);
+      //   objeto.exibirResumo();
+
+      let objeto2 = {
+        nome,
+        idade,
+        sexo,
+        profissao,
+        exibirResumo() {
+          console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`);
+        },
+      };
+
+      //   console.log(objeto2);
+      //   objeto2.exibirResumo();
+
+      ////////////////////////Mudando e adicionando valores////////////////////////
+
+      objeto2.nome = "Pedro";
+      objeto2.nacionalidade = "Brasileiro";
+      objeto2.exibirResumo = () =>
+        console.log(
+          `${objeto2.nome}, ${objeto2.idade} anos, ${objeto2.sexo} é ${objeto2.profissao} e é ${objeto2.nacionalidade}`
+        );
+
+      //   console.log(objeto2);
+      //   objeto2.exibirResumo();
+
+      ////////////////////////Objetos únicos////////////////////////
+
+      let assinatura = {
+        idCliente: 1000,
+        descricao: `Acesso a internet`,
+        status() {
+          console.log(`Ativo`);
+        },
+      };
+
+      console.log(assinatura);
+
+      let y = assinatura;
+
+      console.log(assinatura);
+
+      y.idCliente = 1003;
+
+      console.log(assinatura);
+
+      assinatura.descricao = `Nenhum`;
+
+      console.log(y);
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

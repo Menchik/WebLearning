@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .estilo1 {
+        color: white;
+        background: red;
+      }
+
+      .estilo2 {
+        color: black;
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Selecinando elementos-->
+    <input
+      type="text"
+      placeholder="Digite o seu nome"
+      id="nome-usuario"
+      class="campo-texto"
+      name="nome"
+    />
+
+    <hr />
+
+    <!--Manipulando valores de inputs-->
+    <input
+      type="text"
+      placeholder="Digite um caracter"
+      onkeyup="distribuiCaracter()"
+      id="entrada"
+    />
+    <br />
+    <span>Letras:</span>
+    <input
+      type="text"
+      placeholder="Digite um caracter"
+      disabled="disabled"
+      id="letras"
+    />
+
+    <span>Números</span>
+    <input
+      type="text"
+      placeholder="Digite um caracter"
+      disabled="disabled"
+      id="numeros"
+    />
+
+    <hr />
+    <!--Manipulando estilos dos elementos-->
+    <h3>manipuando estilo</h3>
+
+    <button type="button" onclick="modificaEstilo('#FF0000')">Vermelho</button>
+    <button type="button" onclick="modificaEstilo('#00FF00')">Verde</button>
+    <button type="button" onclick="modificaEstilo('#0000FF')">Azul</button>
+
+    <br />
+
+    <div
+      style="border: 1px solid red; height: 200px; width: 200px"
+      id="caixa"
+    ></div>
+
+    <hr />
+    <!--Manipulando classes dos elementos-->
+
+    <div id="mensagem" class="estilo1">Modificando a classe do elemento</div>
+    <br />
+    <button type="button" onclick="modificaClasse()">Aplicar classe</button>
+
+    <script>
+      //Selecionando elementos
+      console.log(document.getElementById("nome-usuario"));
+      console.log(document.getElementsByTagName("input"));
+      console.log(document.getElementsByClassName("campo-texto"));
+      console.log(document.getElementsByName("nome"));
+
+      //Manipulando valores de input
+      function distribuiCaracter() {
+        //Selecionar valor digitado
+        var char = document.getElementById("entrada").value;
+        //Limpar campo de digitação
+        document.getElementById("entrada").value = "";
+
+        switch (char) {
+          case "0":
+          case "1":
+          case "2":
+          case "3":
+          case "4":
+          case "5":
+          case "6":
+          case "7":
+          case "8":
+          case "9":
+            //adicionar ao numeros
+            document.getElementById("numeros").value += char;
+            break;
+          default:
+            //adicionar ao letras
+            document.getElementById("letras").value += char;
+            break;
+        }
+      }
+
+      //Manipulando estilo de elementos
+      function modificaEstilo(cor_fundo) {
+        document.getElementById("caixa").style.background = cor_fundo;
+      }
+
+      //Manipulando classes de elementos
+      function modificaClasse() {
+        document.getElementById("mensagem").className = "estilo2";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <script>
+      var lista = Array(); // var lista = []
+
+      lista[0] = "banana";
+      lista[1] = "maca";
+      lista[2] = "uva";
+      lista[3] = "morango";
+
+      /////////////////////////
+      var lista2 = Array("banana", "maca", "uva", "morango"); // var lista = ["banana", "maca", "uva", "morango"]
+
+      //Incluir no final do array
+      lista2.push("mamao");
+
+      //Incluir no inicio do array
+      lista2.unshift("jaca");
+
+      //remoção do final do array
+      lista2.pop();
+
+      //remoção do inicio do array
+      lista2.shift();
+
+      console.log(lista2);
+
+      //Procurar elemento
+      console.log(lista2.indexOf("morango"));
+
+      //ordenar
+      lista3 = Array("12", "40", "3", "7", "19", "1");
+      console.log(lista3.sort(ordenaNumeros));
+
+      function ordenaNumeros(a, b) {
+        return a - b;
+      }
+    </script>
+  </body>
+</html>

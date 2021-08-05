@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: #fff url(imagens/fundo.png) repeat-x left top;
+}
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+#topo {
+    height: 150px;
+    background: url(imagens/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(imagens/logo.png);
+    text-indent: -5000px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu-topo ul {
+    margin-top: 30px;
+    float: left;
+    background: #b10333
+}
+
+#menu-topo li {
+    float: left;
+    text-decoration: none;
+}
+
+#menu-topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url(imagens/divisor.png) repeat-y left center;
+}
+
+#menu-topo ul .primeiro a {
+    background: none;
+}
+
+#menu-topo ul a:hover {
+    color: #69001d
+}
+
+#menu-topo ul .selecionado {
+    color: #fff;
+    background: #de003e;
+}
+
+#conteudo {
+    margin-top: 60px;
+    background: #f5f5f5;
+}
+
+#lateral {
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px;
+}
+
+#primario {
+	width: 270px;
+	margin: 0 0 20px 195px ;
+	float: left;
+}
+
+#duas-colunas #primario {
+    width: 555px;
+}
+
+#uma-coluna #primario {
+    width: 750px;
+}
+
+#secundario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px;
+}
+
+.caixa {
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url(imagens/fundo-caixa.png);
+}
+
+h2 {
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+
+.caixa-conteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+h3{
+    display: inline;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 3px;
+    background: #b10333;
+}
+
+.imagem {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+a:link, a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+.caixa-conteudo ul a {
+    text-decoration: none;
+}
+
+.caixa-conteudo ul li img {
+    margin: 5px;
+    float: left;
+}
+
+.caixa-conteudo a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+    background: #fff;
+}
+
+.caixa-conteudo li a p {
+    font-size: 0.7em;
+    color: #000;
+}
+
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    border-top: 1px solid #f3f3f3;
+    line-height: 30px;
+}
+
+#lateral ul a:hover {
+    color: #a1a1a1;
+    background: #f9f9f9 url(imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+input.submit {
+    width: 80px;
+    font-size: 0.9em;
+    background-color: #b10333;
+    color: #fff;
+    border: 2px solid #870529;
+}
+
+#container-rodape {
+    clear: both;
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}

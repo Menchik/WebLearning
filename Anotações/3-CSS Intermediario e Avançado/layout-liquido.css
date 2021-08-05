@@ -1,0 +1,68 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container {
+    width: 960px; /* 720px */
+    margin: 0 auto;
+    background: #fff url(imagens/coluna.png) repeat-y left top;
+    min-width: 720px;
+    max-width: 1280px;
+}
+
+#marca {
+    height: 100px;
+    background: #9E9E9E;
+    text-align: center;
+    line-height: 100px;
+}
+
+#conteudo {
+    width: 75%; /* 520px */
+    float: right;
+}
+
+#conteudo-primario {
+    width: 63%; /* 320px */
+    float: left;
+}
+
+#conteudo-secundario {
+    width: 36%;  /* 180px */
+    float: right;
+    background: #d1d1d1;
+
+}
+
+#conteudo-secundario h2,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao {
+    width: 24%; /* 180px */
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background: #d1d1d1; */
+}
+
+#navegacao ul {
+    list-style: none;
+}
+
+#navegacao li a {
+    text-decoration: none;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+img.foto {
+    width: 90%;
+    padding: 2%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- https://getbootstrap.com/docs/5.0/migration/ -->
+
+    <title>Hello, world!</title>
+  </head>
+
+  <body style="margin-bottom: 200px; padding: 16px">
+    <form>
+      <h2>Grupo prepend</h2>
+      <div class="input-group">
+        <span class="input-group-text">@</span>
+        <input class="form-control" type="text" placeholder="e-mail" />
+      </div>
+
+      <h2>Grupo append</h2>
+      <div class="input-group">
+        <input class="form-control" type="text" placeholder="e-mail" />
+        <span class="input-group-text">@site.com</span>
+      </div>
+
+      <h2>URL customizada</h2>
+      <div class="input-group">
+        <span class="input-group-text"> https://site.com/usuario/ </span>
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Digite seu usuário"
+        />
+      </div>
+
+      <h2>Moeda</h2>
+      <div class="input-group">
+        <span class="input-group-text">$</span>
+        <input class="form-control" type="text" placeholder="Digite um valor" />
+        <span class="input-group-text">,00</span>
+      </div>
+
+      <!--type: checkbox / radio-->
+      <h2>Checkbox / radio</h2>
+      <div class="input-group">
+        <div class="input-group-text">
+          <input type="checkbox" />
+        </div>
+        <input type="text" class="form-control" />
+      </div>
+
+      <h2>Múltiplos inputs</h2>
+      <div class="input-group">
+        <span class="input-group-text">nome/e-mail</span>
+        <input class="form-control" type="text" placeholder="e-mail" />
+        <input class="form-control" type="password" placeholder="senha" />
+      </div>
+
+      <h2>Pesquisas</h2>
+      <div class="input-group">
+        <input class="form-control" type="text" placeholder="Pesquisar" />
+        <button type="button" class="input-group-text btn btn-outline-dark">
+          Pesquisar
+        </button>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
